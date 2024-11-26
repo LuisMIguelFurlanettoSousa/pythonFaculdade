@@ -73,14 +73,14 @@ while True:
                 for _ in range(3):
                     sleep(0.5)
                     print(".", end="")
-                    sys.stdout.flush() 
+                    sys.stdout.flush()
                 sleep(0.5)
 
                 print("\nEncerrando o programa", end="")
                 for _ in range(3):
                     sleep(0.5)
                     print(".", end="")
-                    sys.stdout.flush() 
+                    sys.stdout.flush()
                 sleep(0.5)
                 break
             else:
@@ -88,8 +88,8 @@ while True:
                 for _ in range(3):
                     sleep(0.5)
                     print(".", end="")
-                    sys.stdout.flush() 
+                    sys.stdout.flush()
                 sleep(0.5)
-                break 
+                break
         case _:
             print("Opção invalida, selecione novamente\n")
