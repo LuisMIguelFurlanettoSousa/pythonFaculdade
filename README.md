@@ -14,7 +14,9 @@ Este repositório serve para:
 Consolidar o aprendizado em Python.
 Desenvolver habilidades em resolver problemas e criar algoritmos.
 Aprender boas práticas de programação.
+
 ✨ Por que Python?
+
 O Python é simples, poderoso e versátil, sendo utilizado em áreas como:
 
 Automação 🔄
