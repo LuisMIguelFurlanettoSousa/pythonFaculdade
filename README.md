@@ -20,6 +20,9 @@ Aprender boas práticas de programação.
 O Python é simples, poderoso e versátil, sendo utilizado em áreas como:
 
 Automação 🔄
+
 Desenvolvimento Web 🌐
+
 Análise de Dados 📊
+
 Inteligência Artificial 🤖
