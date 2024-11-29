@@ -1,21 +1,28 @@
-from math import factorial
+MOD = 10**9 + 7
 
-def anagramas(p):
-    # Calcula o fatorial do número total de letras
-    fatNum = factorial(len(p))
-    letrasR = 1
+def factorial(n):
+    f = 1
+    for i in range(2, n + 1):
+        f = f * i % MOD
+    return f
+
+def mod_inverse(a):
+    return pow(a, MOD - 2, MOD)
+
+def count_anagrams(word):
+    from collections import Counter
+    n = len(word)
+    freq = Counter(word)
     
-    # Contabiliza as repetições de cada letra
-    for letra in set(p):  # Usa `set` para evitar contar a mesma letra  vezes
-        qnt = p.count(letra)
-        if qnt > 1:
-            letrasR *= factorial(qnt)  # Multiplica o fatorial das repetições
+    total_fact = factorial(n)
     
-    # Divide o fatorial total pelas repetições
-    return int(fatNum / letrasR)
+    for count in freq.values():
+        total_fact = total_fact * mod_inverse(factorial(count)) % MOD
+    
+    return total_fact
 
+word = input().strip()
 
-p = input().lower()
+result = count_anagrams(word)
 
-anaG = anagramas(p)
-print(anaG)
+print(result)
