@@ -2,8 +2,8 @@ import socket
 import time
 
 # Configurações do servidor
-HOST = '192.168.0.110'
-PORT = 65432
+HOST = '192.168.43.6'
+PORT = 7890
 
 def main():
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
